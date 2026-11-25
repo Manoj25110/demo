@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Happy Birthday, Prithvika!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><span>a little something ♡</span><small>BIRTHDAY EDITION</small></header>
+    <main>
+        <section class="hero">
+            <div>
+                <p class="tag">✦ TODAY IS YOUR DAY</p>
+                <h1>Happy Birthday,<br><i>Prithvika!</i></h1>
+                <p class="lead">Hope your day is full of smiles, good food, lovely surprises and all your favourite
+                    things.</p>
+                <button onclick="document.querySelector('#note').scrollIntoView({behavior:'smooth'})">Open your little
+                    surprise ↓</button><small class="hint">Made just to make you smile.</small>
+            </div>
+            <div class="art">
+                <div class="blob"></div>
+                <div class="polaroid">
+                    <div class="placeholder">♡</div>
+                    <p>A DAY AS LOVELY AS YOU</p>
+                </div><b>✿</b><strong>✧</strong>
+            </div>
+        </section>
+        <section class="note" id="note"><small>01 — A SMALL BIRTHDAY NOTE</small>
+            <article><span>✦</span>
+                <h2>Just a little reminder…</h2>
+                <p>You deserve a day that feels happy, easy and full of good moments. It's nice that we're talking
+                    again, and I hope we get to share more random conversations and laughs. No big speech today — just
+                    wishing you the very best.</p>
+                <p class="sign">Have a lovely one! ♡</p>
+            </article>
+        </section>
+        <section class="gallery"><small>02 — THE HAPPY CORNER</small>
+            <h2>A few pictures,<br><i>a lot of smiles.</i></h2>
+            <p class="sub">Add your favourite photos here. Tap any picture to see it bigger.</p>
+            <div class="photos"><button class="photo" onclick="showPhoto(this)"><img src="photo1.jpeg"
+                        alt="Photo 1"><span>01</span></button><button class="photo" onclick="showPhoto(this)"><img
+                        src="photos/photo2.jpg" alt="Photo 2"><span>02</span></button><button class="photo"
+                    onclick="showPhoto(this)"><img src="photos/photo3.jpg" alt="Photo 3"><span>03</span></button><button
+                    class="photo" onclick="showPhoto(this)"><img src="photos/photo4.jpg"
+                        alt="Photo 4"><span>04</span></button><button class="photo" onclick="showPhoto(this)"><img
+                        src="photos/photo5.jpg" alt="Photo 5"><span>05</span></button><button class="photo"
+                    onclick="showPhoto(this)"><img src="photos/photo6.jpg" alt="Photo 6"><span>06</span></button><button
+                    class="photo" onclick="showPhoto(this)"><img src="photos/photo7.jpg"
+                        alt="Photo 7"><span>07</span></button><button class="photo" onclick="showPhoto(this)"><img
+                        src="photos/photo8.jpg" alt="Photo 8"><span>08</span></button></div><small class="tip">TAP A
+                PHOTO TO VIEW IT BIGGER</small>
+        </section>
+        <section class="wishes">
+            <div><small>03 — YOUR DAY, YOUR RULES</small>
+                <h2>Birthday<br><i>must-dos!</i></h2>
+                <p>A very important checklist for today. Please follow responsibly. 😌</p>
+            </div>
+            <div class="checks"><label><input type="checkbox"><span></span>Eat your favourite
+                    food<b>01</b></label><label><input type="checkbox"><span></span>Take lots of
+                    pictures<b>02</b></label><label><input type="checkbox"><span></span>Laugh at something
+                    silly<b>03</b></label><label><input type="checkbox"><span></span>Enjoy every little
+                    moment<b>04</b></label></div>
+        </section>
+        <section class="ending"><small>04 — ONE LAST WISH</small>
+            <article>
+                <div>✧</div>
+                <h2>Here's to a year<br>of <i>good things.</i></h2>
+                <p>New experiences, peaceful days, exciting opportunities and people who make you laugh. Keep smiling
+                    and enjoy your day, Prithvika!</p><button onclick="celebrate()">Send birthday wishes ♡</button>
+            </article>
+        </section>
+    </main>
+    <footer><span>MADE WITH CARE, JUST FOR YOUR BIRTHDAY</span><span>HAPPY BIRTHDAY, PRITHVIKA ♡</span></footer>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('show')"><button>×</button><img id="large"></div>
+    <div class="toast" id="toast">A little extra birthday happiness for you! ♡</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
